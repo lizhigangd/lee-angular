@@ -1,0 +1,19 @@
+<div class="demo-trigger">
+  <!--trigger location source-->
+  <button mat-raised-button
+          cdkOverlayOrigin
+          type="button"
+          (click)="showPreview()">Open</button>
+  <button
+          type="button"
+          (click)="close()">close</button>
+</div>
+
+<!--弹出动态内容模板-->
+<ng-template #overlay>
+  <div class="demo-overlay">
+    <div style="overflow: auto;">
+      <ul><li *ngFor="let item of arr; index as i">{{item.name}} {{i}}</li></ul>
+    </div>
+  </div>
+</ng-template>

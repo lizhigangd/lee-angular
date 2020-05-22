@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "my-lib": [
+        "projects/my-lib/index.ts"
+      ],
+      "my-lib/*": [
+        "projects/my-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
